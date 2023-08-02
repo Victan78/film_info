@@ -471,6 +471,7 @@ overflow-y: scroll;
         
         font-size:  0.95em;
         min-width: 200px;
+        min-height: 0px;
     }
     .modal-vote{
         font-size: 1em;
@@ -483,6 +484,7 @@ overflow-y: scroll;
     .modal-text-content{
         overflow-y: scroll;
         overflow-x: hidden;
-        min-width: 10px;
+        min-width: 100px;
+
     }
   }
