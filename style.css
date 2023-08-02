@@ -271,7 +271,7 @@ overflow-y: scroll;
 
   .modal .modal-overview{
     overflow-y: scroll;
-    max-height: 400px;
+   
   }
   
   .modal h1{
@@ -398,6 +398,9 @@ overflow-y: scroll;
 }
 
   @media screen and (max-width: 800px) {
-
+    .modal .modal-overview{
+        overflow-y: scroll;
+        height: 200px;
+    }
   }
   
