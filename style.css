@@ -48,9 +48,11 @@ padding: 1em;
 backdrop-filter: blur(20px);
 align-items: center;
 height: calc(100vh - 100px);
+width: 92dvw;
 background: #2929297c;
 border-radius: 12px;
 }
+
 .parent{
 display: flex;
 flex-wrap: wrap;
@@ -448,6 +450,10 @@ overflow-y: scroll;
     .modal-text-content{
         overflow-y: scroll;
         min-width: 100px;
+    }
+    .title{
+        font-size: 0.2em;
+        background: #050505cb;
     }
   }
   
