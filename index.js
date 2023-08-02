@@ -309,8 +309,18 @@ function details(id){
                 var modal_close = document.createElement('div')
                 modal_close.className = 'modal-close'
                 modal_close.innerHTML = 'X'
+                var modal_genre = document.createElement('p')
+                modal_genre.className = 'modal-genre'
+                var genre = []
+                for(let i=0;i<response.genres.length;i++){
+                    genre[i]=response.genres[i].name
+                    
+                }
+                modal_genre.innerHTML = genre.join(' / ')
+
                 modal_content.appendChild(modal_img_box)
                 modal_content.appendChild(modal_title)
+                modal_content.appendChild(modal_genre)
                 modal_content.appendChild(modal_overview)
                 modal_content.appendChild(modal_date)
                 modal_content.appendChild(modal_vote)
