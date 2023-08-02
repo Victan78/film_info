@@ -435,6 +435,7 @@ overflow-y: scroll;
     .modal-vote{
         font-size: 1em;
         font-family: Arial, Helvetica, sans-serif;
+        position: static;
     }
   }
   
