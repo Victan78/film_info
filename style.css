@@ -328,8 +328,8 @@ overflow-y: scroll;
 
 .modal-vote{
     font-family:'orbitron';
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     background: #272727;
     display: flex;
@@ -339,6 +339,8 @@ overflow-y: scroll;
     font-size: larger;
     font-weight: 700;
     animation: visible 1s ease-in-out;
+    position: relative;
+    bottom: -50px;
 }
   
 .modal-genre{
@@ -347,7 +349,7 @@ overflow-y: scroll;
  @keyframes visible{
      0%{
         opacity: 0;
-        transform: translateY(500px);
+        transform: translateY(300px);
         
      }
      40%{
