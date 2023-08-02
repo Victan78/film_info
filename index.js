@@ -333,13 +333,10 @@ function details(id){
                     modal.style.scale = '1.5'
                     modal_container.style.opacity = '0'
                     modal.style.opacity = '0'
-                    setTimeout(() => {
-                        modal.remove()
-                        
-                    }
-                        , 200)
+                    
                     
                     setTimeout(() => {
+                        modal.remove()
                         modal_container.style.display = 'none'
                     }
                         , 200)
