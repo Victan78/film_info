@@ -400,7 +400,7 @@ overflow-y: scroll;
   @media screen and (max-width: 800px) {
     .modal .modal-overview{
         overflow-y: scroll;
-        height: 200px;
+        height: 100px;
     }
   }
   
