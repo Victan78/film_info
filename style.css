@@ -295,6 +295,7 @@ overflow-y: scroll;
         height: 100%;
         object-fit: cover;
         object-position: top;
+        animation: opacity 0.5s ease-in-out;
     }
 
   /* Styles pour les icônes */
@@ -383,6 +384,15 @@ overflow-y: scroll;
     100%{
         opacity: 1;
         margin-top: 0px;
+    }
+}
+
+@keyframes opacity{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
     }
 }
 
