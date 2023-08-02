@@ -286,6 +286,8 @@ function details(id){
                 var modal_container = document.querySelector('.modal-container')
                 modal.className = 'modal'
                 var modal_content = document.createElement('div')
+                var text_content = document.createElement('div')
+                text_content.className = 'modal-text-content'
                 modal_content.className = 'modal-content'
                 var modal_img_box = document.createElement('div')
                 modal_img_box.className = 'modal-img-box'
@@ -323,13 +325,14 @@ function details(id){
                 modal_genre.innerHTML = genre.join(' / ')
 
                 modal_content.appendChild(modal_img_box)
-                modal_content.appendChild(modal_title)
-                modal_content.appendChild(modal_genre)
-                modal_content.appendChild(modal_overview)
-                modal_content.appendChild(modal_date)
-                modal_content.appendChild(modal_vote)
+                text_content.appendChild(modal_title)
+                text_content.appendChild(modal_genre)
+                text_content.appendChild(modal_overview)
+                text_content.appendChild(modal_date)
+                text_content.appendChild(modal_vote)
                 modal_content.appendChild(modal_close)
                 modal.appendChild(modal_content)
+                modal.appendChild(text_content)
                 modal_container.appendChild(modal)
                 modal_container.style.display = 'block'
                 modal_container.style.opacity = '1'
