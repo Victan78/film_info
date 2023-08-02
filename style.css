@@ -12,6 +12,7 @@
 body{
     background: linear-gradient(90deg, rgb(27, 27, 27) 0%, rgb(77, 77, 77) 100%);
     overflow: hidden;
+    width: 100dvw;
     background-size: cover;
 }
 
