@@ -438,6 +438,7 @@ overflow-y: scroll;
         position: static;
         width: 50px;
         height: 50px;
+        margin-left: 20px;
     }
     .modal-text-content{
         overflow-y: scroll;
