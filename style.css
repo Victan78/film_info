@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'orbitron';
+    src: url(assets\svg\Orbitron\Orbitron-VariableFont_wght.ttf);
+}
+
+
+
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     --green:rgb(24, 255, 178);
@@ -253,7 +260,6 @@ overflow-y: scroll;
     max-width: 600px;
     min-width: 300px;
     max-height: 90dvh;
-    overflow-x: visible;
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
