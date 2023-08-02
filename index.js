@@ -189,7 +189,11 @@ async function search(keyword){
       fetch(`https://api.themoviedb.org/3/search/movie?query=${keyword}`, options)
         .then(response => response.json())
         .then(response => {console.log(response)
+            if(response.results.length==0){
+                parent.innerHTML='<p style="color: #ffff">aucun resultat</p>'
+            }
             for(var i=0;i<response.results.length;i++){
+               
                 var div=document.createElement('div')
                 div.className='child'
                 div.id=response.results[i].id

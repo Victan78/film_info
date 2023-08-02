@@ -181,12 +181,15 @@ overflow-y: scroll;
 
 
 .search-container {
+    /* position: fixed; */
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
+   
     border-bottom: rgba(0, 128, 107, 0.479) solid 1px;
     padding: 0.5em;
+    z-index: 99;
     
   }
   
