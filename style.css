@@ -483,6 +483,6 @@ overflow-y: scroll;
     .modal-text-content{
         overflow-y: scroll;
         overflow-x: hidden;
-        min-width: 100px;
+        min-width: 10px;
     }
   }
