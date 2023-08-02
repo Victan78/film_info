@@ -257,7 +257,6 @@ overflow-y: scroll;
     max-width: 600px;
     min-width: 300px;
     max-height: 90dvh;
-    overflow-y: scroll;
     display: flex;
     flex-direction: column;
     padding: 15px;
@@ -268,6 +267,10 @@ overflow-y: scroll;
     border: black solid 1px;
     transition: all 0.3s ease;
     animation: apparition 0.5s ease-in-out;
+  }
+
+  .modal .modal-overview{
+    overflow-y: scroll;
   }
   
   .modal h1{
