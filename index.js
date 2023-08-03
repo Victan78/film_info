@@ -2,6 +2,13 @@ var carte = document.querySelectorAll(".child")
 var search_box = document.querySelector(".search-box")
 var search_btn = document.querySelector(".search-btn")
 var parent=document.querySelector('.parent')
+var home=document.getElementById('home')
+home.addEventListener('click',()=>{
+    parent.innerHTML=''
+    localStorage.setItem('page',1)
+    fechting(localStorage.getItem('page'))
+}
+)
 localStorage.setItem('page',1)
 search_box.addEventListener('click', () => {
     search_box.style.width = "100%"
