@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'orbitron';
+    font-family: 'Orbitron';
     src: url(assets\svg\Orbitron\Orbitron-VariableFont_wght.ttf);
 }
 
@@ -70,7 +70,7 @@
     font-size: 1em;
     font-weight: 500;
     color: #f7f7f7;
-    font-family: 'orbitron';
+    font-family: 'Orbitron';
     text-shadow: 0px 0px 0px 1px black, 0px 2px 10px rgba(0, 0, 0, 0.364),0px 0px 10px 2px rgba(0, 0, 0, 0.295);
     backdrop-filter: blur(10px);
     border-radius: 10px;
@@ -322,7 +322,7 @@ overflow-y: scroll;
   }
   
   .modal h1{
-    font-family:'orbitron';
+    font-family:'Orbitron';
     font-size: 2em;
     animation: visible_h1 0.7s ease-in-out;
     
@@ -391,7 +391,7 @@ img.modal-img:hover{
   /* Styles pour les détails du film dans le popup */
 
 .modal-vote{
-    font-family:'orbitron';
+    font-family:'Orbitron';
     width: 80px;
     height: 80px;
     border-radius: 50%;
