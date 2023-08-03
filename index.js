@@ -272,10 +272,15 @@ function details(id){
       
       fetch(`https://api.themoviedb.org/3/movie/${id}?language=fr-EU`, options)
         .then(response => response.json())
-        .then(response => {console.log(response)
+        .then(response => {
+          
+            console.log(response)
         
-           
+                document.querySelectorAll('.modal').forEach(el=>{
+                    el.remove()
+                })
                 var modal = document.createElement('div')
+
                 var modal_container = document.querySelector('.modal-container')
                 modal.className = 'modal'
                 var modal_content = document.createElement('div')
@@ -284,9 +289,16 @@ function details(id){
                 modal_content.className = 'modal-content'
                 var modal_img_box = document.createElement('div')
                 modal_img_box.className = 'modal-img-box'
+                var modal_poster_box = document.createElement('div')
+                modal_poster_box.className = 'modal-poster-box'
                 var modal_img = document.createElement('img')
+                var modal_poster_img = document.createElement('img')
+                modal_poster_img.className = 'modal-poster-img'
+                modal_poster_img.src = `https://image.tmdb.org/t/p/original${response.poster_path}`
                 modal_img.className = 'modal-img'
                 modal_img_box.appendChild(modal_img)
+                modal_img_box.appendChild(modal_poster_box)
+                modal_poster_box.appendChild(modal_poster_img)
                 modal_img.src = `https://image.tmdb.org/t/p/original${response.backdrop_path}`
                 if (response.backdrop_path == null) {
                     modal_img.src = 'assets/svg/notfound.svg'
