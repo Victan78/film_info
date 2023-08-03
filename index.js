@@ -259,14 +259,7 @@ if(window.innerWidth>920){
 
 //fonction pour afficher les details du film dans un modal
 function details(id){
-    var modal=document.querySelector('.modal')
-    var modal_content=document.querySelector('.modal-content')
-    var modal_img=document.querySelector('.modal-img')
-    var modal_title=document.querySelector('.modal-title')
-    var modal_overview=document.querySelector('.modal-overview')
-    var modal_date=document.querySelector('.modal-date')
-    var modal_vote=document.querySelector('.modal-vote')
-    var modal_close=document.querySelector('.modal-close')
+
 
   
     const options = {
@@ -310,8 +303,8 @@ function details(id){
                 modal_date.innerHTML ="Date de sortie: " + response.release_date
                 var modal_vote = document.createElement('p')
                 modal_vote.className = 'modal-vote'
-                modal_vote.innerHTML = response.vote_average
-                modal_vote.innerHTML = modal_vote.innerHTML.slice(0, 3)
+                modal_vote.innerHTML = response.vote_average 
+                modal_vote.innerHTML = modal_vote.innerHTML.slice(0, 1) +"/"+"10"
                 var modal_close = document.createElement('div')
                 modal_close.className = 'modal-close'
                 modal_close.innerHTML = 'X'
