@@ -57,7 +57,7 @@
     border-radius: 10px;
 }
 #home:hover{
-    
+    user-select: none;
     background: rgb(82, 82, 82);
 }
 #home>svg{
@@ -483,6 +483,14 @@ img.modal-img:hover{
 }
 
   @media screen and (max-width: 860px) {
+    #home:hover{
+        background: transparent;
+    }
+    .charger_davatange:hover{
+        background: transparent;
+        border: var(--green) solid 1.5px;
+        color: var(--green);
+    }
     .search-container>svg{
         display: none;
     }
